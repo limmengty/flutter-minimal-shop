@@ -8,15 +8,15 @@ import 'package:ass_minimal_shop/screens/products/components/ssd_product.dart';
 import 'package:flutter/material.dart';
 
 class TapbarModel {
-  List<String> items = [
-    "All",
-    'Phone',
-    "Computer",
-    "Mouse",
-    "Keyboard",
-    "Headset",
-    'Bag'
-  ];
+  // List<String> items = [
+  //   "All",
+  //   'Phone',
+  //   "Computer",
+  //   "Mouse",
+  //   "Keyboard",
+  //   "Headset",
+  //   'Bag'
+  // ];
   List<Widget> screen = [
     const AllProduct(),
     const IphoneProduct(),  

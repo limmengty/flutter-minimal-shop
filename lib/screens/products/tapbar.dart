@@ -1,6 +1,9 @@
 import 'package:ass_minimal_shop/constants.dart';
+import 'package:ass_minimal_shop/helper/language_heper.dart';
 import 'package:ass_minimal_shop/models/tapbar.dart';
+import 'package:ass_minimal_shop/services/cache_logic.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class TapBar extends StatefulWidget {
   TapBar({super.key});
@@ -16,6 +19,16 @@ class _TapBarState extends State<TapBar> {
 
   @override
   Widget build(BuildContext context) {
+    CacheMinimalAppLanguage lang = context.watch<CacheLogic>().cacheLang;
+    List<String> items = [
+      lang.allTitle,
+      lang.phoneTitle,
+      lang.computerTitle,
+      lang.mouseTitle,
+      lang.keyboardTitle,
+      lang.headsetTitle,
+      lang.bagTitle
+    ];
     return SizedBox(
       width: double.infinity,
       height: 760,
@@ -27,7 +40,7 @@ class _TapBarState extends State<TapBar> {
             height: 70,
             child: ListView.builder(
               physics: const BouncingScrollPhysics(),
-              itemCount: tapBar.items.length,
+              itemCount: items.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (ctx, index) {
                 return Column(
@@ -64,7 +77,7 @@ class _TapBarState extends State<TapBar> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                tapBar.items[index],
+                                items[index],
                               ),
                             ],
                           ),

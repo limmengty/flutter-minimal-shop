@@ -140,8 +140,8 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
               return null;
             },
             decoration: InputDecoration(
-              labelText: lang.phoneNumber,
-              hintText: lang.phoneNumber,
+              labelText: lang.email,
+              hintText: lang.email,
               floatingLabelBehavior: FloatingLabelBehavior.always,
               suffixIcon:
               const CustomSurffixIcon(

@@ -146,7 +146,7 @@ class _AccountScreenState extends State<AccountScreen> {
                 },
                 child: SettingItem(
                   title: lang.changeToKH,
-                  icon: Ionicons.locate_outline,
+                  icon: Ionicons.language,
                   bgColor: Colors.orange.shade100,
                   iconColor: Colors.orange,
                   onTap: () {},
@@ -172,7 +172,7 @@ class _AccountScreenState extends State<AccountScreen> {
                 },
                 child: SettingItem(
                   title: lang.lightMode,
-                  icon: Ionicons.diamond,
+                  icon: Ionicons.sunny,
                   bgColor: Colors.green.shade100,
                   iconColor: Colors.green,
                   onTap: () {},

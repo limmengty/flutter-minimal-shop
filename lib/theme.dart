@@ -121,7 +121,7 @@ class AppTheme {
         }),
       ),
       iconTheme: const IconThemeData(color: kTextColorDark),
-      cardColor:  const Color.fromRGBO(7, 25, 82, 1)
+      cardColor:  const Color.fromRGBO(7, 25, 82, 1),
     );
   }
 }

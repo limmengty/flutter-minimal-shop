@@ -1,3 +1,4 @@
+import 'package:ass_minimal_shop/constants.dart';
 import 'package:ass_minimal_shop/screens/details/build_list_cart.dart';
 import 'package:ass_minimal_shop/services/cache_logic.dart';
 import 'package:flutter/material.dart';
@@ -51,17 +52,24 @@ class DetailsScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(14),
                 ),
-                child: Row(
-                  children: [
-                    Text(
-                      product_range,
-                      style: const TextStyle(
-                        fontSize: 14,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  decoration: BoxDecoration(
+                    color: kPrimaryLightColor,
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                  child: Row(
+                    children: [
+                      Text(
+                        product_range,
+                        style: const TextStyle(
+                          fontSize: 16,
+                        ),
                       ),
-                    ),
-                    const SizedBox(width: 4),
-                    SvgPicture.asset("assets/icons/Star Icon.svg"),
-                  ],
+                      const SizedBox(width: 4),
+                      SvgPicture.asset("assets/icons/Star Icon.svg"),
+                    ],
+                  ),
                 ),
               ),
             ],
